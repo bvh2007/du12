@@ -1,0 +1,23 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#251631"><meta name="description" content="Một món quà 20/10 đặc biệt dành cho bạn thân!"><title>20/10 • Gửi bạn thân 💖</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/style.css"><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script><!-- CHỈNH ẢNH VÀ TÊN TẠI ĐÂY. Ảnh đặt trong public/assets/images/ -->
+<script>
+window.SURPRISE_SETTINGS = {
+  friendName: "Bạn thân",
+  photos: [
+    "/assets/images/anh23.jpg",
+    "/assets/images/anh23.jpg",
+    "/assets/images/anh23.jpg"
+  ],
+  music: {
+    happy: "/assets/music/happy.mp3",
+    emotional: "/assets/music/emotional.mp3"
+  }
+};
+</script>
+<script defer src="/js/script.js"></script></head><body><div class="ambient" aria-hidden="true"></div><header class="top"><span>💌 Gửi một người rất đặc biệt</span><button id="sound" class="small" aria-pressed="false">🔇 Bật nhạc</button></header><main>
+<section class="scene active dark" id="s0"><div class="gift" aria-hidden="true">🎁</div><p class="eyebrow">THÔNG BÁO KHẨN</p><h1>Ê CON KIA! 🫵</h1><p class="lead">Tao có chuyện cực kỳ nghiêm trọng muốn nói!</p><button class="primary" id="begin">Gì nữa đấy? 🙄</button><div id="scan" class="scan" role="status" aria-live="polite"></div></section>
+<section class="scene" id="s1"><div class="flower">🌷 ✨ 🌸</div><p class="eyebrow">A LITTLE SURPRISE FOR YOU</p><h1 class="english">Happy Vietnamese<br>Women's Day</h1><h2>CHÚC MỪNG 20/10! 💐</h2><p class="lead">Chúc mừng ngày của những thiên thần, và cả một đứa chuyên làm tao đau đầu như mày! 😂</p><button class="primary next">Xem ai là nhân vật chính →</button></section>
+<section class="scene" id="s2"><p class="eyebrow">NHÂN VẬT CHÍNH XUẤT HIỆN</p><h2>Hôm nay là ngày của <span id="friendName">công chúa</span> 👑</h2><div class="polaroid" id="polaroid" tabindex="0" role="button" aria-label="Nhấn để xem lời trêu đùa"><div class="crown">👑</div><img id="photo" src="" alt="Ảnh bạn thân"/><div id="photoFallback" class="photo-fallback" hidden>📸<small>Hãy thêm ảnh vào public/assets/images và chỉnh đường dẫn trong index.html nhé!</small></div><div class="polaroid-label">Bạn thân phiên bản giới hạn 💗</div></div><p id="troll" class="bubble" aria-live="polite">Nhấn vào ảnh đi, có bất ngờ đó! 😏</p><div class="controls"><button class="secondary" id="prev">← Ảnh trước</button><span id="counter">1 / 3</span><button class="secondary" id="nextPhoto">Ảnh sau →</button></div><button class="primary next">Chơi trò này không? 🎮</button></section>
+<section class="scene" id="s3"><p class="eyebrow">MINI GAME SIÊU KHÓ</p><div class="emoji">🤔</div><h2>Mày có công nhận tao là đứa bạn tuyệt vời nhất không?</h2><div class="game-area"><button class="primary" id="yes">Có chứ 😍</button><button class="secondary" id="no">Không nha 🙄</button></div><p id="gameResult" role="status"></p><button class="text-btn" id="skip">Bỏ qua câu hỏi →</button></section>
+<section class="scene" id="s4"><p class="eyebrow">MÁY PHÁT MAY MẮN 20/10</p><div class="emoji">🎰💌</div><h2>Mỗi lần nhấn, một lời chúc mới!</h2><div class="wish-card" id="wish" aria-live="polite">Sẵn sàng nhận một điều tốt đẹp chưa?</div><button class="primary" id="getWish">Nhận lời chúc 🎁</button><button class="secondary next">Đến điều tao thực sự muốn nói →</button></section>
+<section class="scene night" id="s5"><div class="stars" aria-hidden="true"></div><p class="eyebrow">ĐỌC CHẬM MỘT CHÚT NHÉ</p><div id="letter" class="letter" aria-live="polite"></div><div class="heart-frame"><img id="finalPhoto" src="" alt="Bạn thân đáng quý"/><span id="finalFallback" hidden>💖</span></div><h2 class="ending">CHÚC MỪNG 20/10,<br>BẠN THÂN CỦA TAO! 💖</h2><button class="primary" id="replay">Xem lại từ đầu ↺</button></section>
+</main><footer>Made with 💗, một chút cà khịa và rất nhiều tình bạn</footer><audio id="music" loop preload="none"></audio></body></html>

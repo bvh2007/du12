@@ -1,0 +1,15 @@
+require('dotenv').config();
+const express = require('express');
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 3000;
+app.disable('x-powered-by');
+app.use(express.json({limit:'20kb'}));
+app.get('/api/health', (_req,res)=>res.json({status:'ok'}));
+app.get('/api/config', (_req,res)=>res.json(require('./data/config.json')));
+app.use('/api/wishes', require('./routes/wishes.routes'));
+app.use(express.static(path.join(__dirname,'public'), {dotfiles:'deny'}));
+app.use((req,res)=>res.status(404).json({error:'Không tìm thấy đường dẫn'}));
+app.use((err,req,res,next)=>{console.error('Server error:',err.message);res.status(500).json({error:'Đã xảy ra lỗi máy chủ'});});
+if (require.main === module) app.listen(PORT,'0.0.0.0',()=>console.log(`Website ready on port ${PORT}`));
+module.exports=app;

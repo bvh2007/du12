@@ -1,0 +1,13 @@
+{
+  "friendName": "Bạn thân",
+  "headline": "Chúc mừng 20/10!",
+  "photos": [
+    "/assets/images/friend1.jpg",
+    "/assets/images/friend2.jpg",
+    "/assets/images/friend3.jpg"
+  ],
+  "music": {
+    "happy": "/assets/music/happy.mp3",
+    "emotional": "/assets/music/emotional.mp3"
+  }
+}
